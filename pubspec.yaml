@@ -1,0 +1,57 @@
+name: sawamall
+description: A new Flutter application.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+dependencies:
+  flutter:
+   sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.0
+  intl: 0.16.1
+  provider: ^4.3.2+2
+  dio: ^3.0.10
+  retrofit: any
+  logger: any
+  shared_preferences: ^0.5.12+4
+  get_it: ^5.0.3
+  json_annotation: ^3.1.1
+
+  r_dart_library:
+    git:
+      url: https://github.com/YK-Unit/r_dart_library.git
+      ref: 0.2.1
+
+
+dev_dependencies:
+  retrofit_generator: any
+  build_runner: any
+  json_serializable: ^3.5.1
+
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/images/packaging.png
+  - assets/images/product.png
+  - assets/images/
+  fonts:
+  - family: cairo
+    fonts:
+    - asset: assets/fonts/cairo/cairo_bold.ttf
+    - asset: assets/fonts/cairo/cairo_regular.ttf
+    - asset: assets/fonts/cairo/cairo_semibold.ttf
+flr:
+  core_version: 3.1.0
+  dartfmt_line_length: 80
+  assets:
+  - assets/images/
+  fonts:
+  - assets/fonts
+flutter_intl:
+  enabled: true
