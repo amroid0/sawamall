@@ -1,7 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:sawamall/ui/login_page.dart';
 import 'package:sawamall/ui/main_page.dart';
 import 'package:sawamall/ui/search_page.dart';
+import 'package:sawamall/ui/sign_up_page.dart';
+import 'package:sawamall/ui/splash_page.dart';
 
 class RouteGenerator {
   static const String splash = '/splash';
@@ -15,7 +18,7 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
-        return MaterialPageRoute(builder: (_) => MainScreen());
+        return MaterialPageRoute(builder: (_) => SignUpView());
       case '/search':
       // Validation of correct data type
 
@@ -23,6 +26,13 @@ class RouteGenerator {
             builder: (_) => SearchScreen(
             ),
           );
+      case '/home':
+      // Validation of correct data type
+
+        return MaterialPageRoute(
+          builder: (_) => MainScreen(
+          ),
+        );
 
         // If args is not of the correct type, return an error page.
         // You can also throw an exception while in development.

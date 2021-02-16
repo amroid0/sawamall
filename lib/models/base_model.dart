@@ -14,6 +14,6 @@ class BaseModel<T> {
 
   get getException {
     return _error;
-  }
+}
 
 }

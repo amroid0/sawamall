@@ -11,7 +11,7 @@ final ThemeData themeData = new ThemeData(
     primaryColorBrightness: Brightness.light,
     accentColor: AppColors.purple[500],
     accentColorBrightness: Brightness.light,
-  textTheme: TextTheme(
+ /* textTheme: TextTheme(
     headline6:  TextStyle(
       fontSize: 72,
       fontWeight: FontWeight.w500,
@@ -28,7 +28,7 @@ final ThemeData themeData = new ThemeData(
       fontWeight: FontWeight.w500,
       color: AppColors.textPrimary,
     ),
-  ),
+  ),*/
 );
 
 
