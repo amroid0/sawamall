@@ -5,6 +5,7 @@ import 'package:sawamall/widgets/custom_social_button.dart';
 import 'package:sawamall/widgets/custom_tabs.dart';
 import 'package:sawamall/widgets/custom_text.dart';
 import 'package:sawamall/widgets/custom_text_field.dart';
+import 'package:sawamall/widgets/logo_widget.dart';
 import 'package:sawamall/widgets/titled_horzental_line.dart';
 
 class LoginView extends StatefulWidget {
@@ -26,11 +27,8 @@ class _LoginViewState extends State<LoginView> {
             padding: EdgeInsets.symmetric(vertical: 20, horizontal: 16),
             child: Column(
               children: [
-                Container(
-                  width: MediaQuery.of(context).size.width * .6,
-                  height: 170,
-                  child: Image.asset('assets/images/logo.png'),
-                ),
+                LogoWidget(),
+
                 SizedBox(
                   height: 10,
                 ),

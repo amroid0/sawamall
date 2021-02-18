@@ -9,7 +9,7 @@ class PhoneWidget extends StatefulWidget {
 class _PhoneWidgetState extends State<PhoneWidget> {
   String _selectedCountryCode;
   List<String> _countryCodes = ['+91', '+23'];
-  List<String> _flags = ['assets/images/instagram.png', 'assets/images/google.png'];
+  List<String> _flags = ['assets/images/sa.png', 'assets/images/iq.png'];
 
 
   @override

@@ -50,40 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
         padding: EdgeInsets.all(16),
         child: Column(
           children: [
-            Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  InkWell(child: Icon(Icons.close,color: Colors.grey,)),
-                  SizedBox(width: 8,),
-                  Expanded(
-                    child: Container(
-                      height: 50,
-                      child: TextFormField(
-                        readOnly: true,
-                        enableInteractiveSelection: true,
-                        onTap: (){
-                          Navigator.pushNamed(context, RouteGenerator.search);
-                        },
-                        onChanged: (value) {
-
-                        },
-                        maxLines: 1,
-                        decoration: InputDecoration(
-                            contentPadding: EdgeInsets.fromLTRB(10,0,10,-20),
-                            hintText:S.of(context).search,
-                            labelStyle:TextStyle(fontSize: 12) ,
-                            hintStyle: TextStyle(fontSize: 12,color: Colors.grey),
-                            fillColor: Color(0xffd3d3d3),
-                            suffixIcon: CircleIconButton(icon: Icons.search,),
-                            filled: true,
-                            border: OutlineInputBorder(
-                                borderSide: BorderSide.none,
-                                borderRadius: BorderRadius.all(Radius.circular(25.0)))),
-                      ),
-                    ),
-                  ),
-                ]
-            ),
             SizedBox(height: 8,),
             Container(alignment:Alignment.topRight,child: Text("عرض 7 منتجات لكيك سريع التحضير",style: TextStyle(fontSize: 14,color: Colors.black38),)),
             SizedBox(height: 8,),
