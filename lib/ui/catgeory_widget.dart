@@ -52,7 +52,6 @@ class CateogryScreen extends StatelessWidget {
                                   ])),
 
                         child:
-
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
