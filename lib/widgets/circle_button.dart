@@ -6,9 +6,10 @@ class CircleIconButton extends StatelessWidget {
   final Function onPressed;
   final IconData icon;
   final Color color;
+  final Color iconColor;
 
 
-  CircleIconButton({this.size = 30.0, this.icon = Icons.clear, this.onPressed,this.color});
+  CircleIconButton({this.size = 30.0, this.icon = Icons.clear, this.onPressed,this.color,this.iconColor= AppColors.white});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +30,7 @@ class CircleIconButton extends StatelessWidget {
                 Icon(
                   icon,
                   size: size * 0.6,
-                  color: AppColors.white,// 60% width for icon
+                  color: iconColor,// 60% width for icon
                 )
               ],
             )));

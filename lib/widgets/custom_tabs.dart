@@ -17,7 +17,7 @@ class _SegmentedControlState extends State<SegmentedControl> {
 
   Widget segmentedControl() {
     return Container(
-      width: 300,
+      width: MediaQuery.of(context).size.width,
       child: CupertinoSlidingSegmentedControl(
           groupValue: segmentedControlValue,
           backgroundColor: Colors.grey.shade200,

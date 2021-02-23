@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:sawamall/ui/all_categories_products_page.dart';
 import 'package:sawamall/ui/cateogry_products_page.dart';
 import 'package:sawamall/ui/catgeory_widget.dart';
+import 'package:sawamall/ui/country_lang_pref_page.dart';
 import 'package:sawamall/ui/forget_page.dart';
 import 'package:sawamall/ui/home_widget.dart';
 import 'package:sawamall/ui/login_page.dart';
 import 'package:sawamall/ui/main_page.dart';
+import 'package:sawamall/ui/product_detail_page.dart';
 import 'package:sawamall/ui/reset_password_page.dart';
 import 'package:sawamall/ui/search_page.dart';
 import 'package:sawamall/ui/sign_up_page.dart';
@@ -24,7 +26,7 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
-        return MaterialPageRoute(builder: (_) => CategoryProductsScreen());
+        return MaterialPageRoute(builder: (_) => ProductDetailView());
       case '/search':
       // Validation of correct data type
 
